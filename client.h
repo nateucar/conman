@@ -32,7 +32,7 @@
 typedef struct client_conf {
     char           *prog;               /* name of client program            */
     req_t          *req;                /* client request info               */
-    int             escapeChar;         /* char to issue client escape seq   */
+    char           *escapeSeq;          /* string to issue client escape seq */
     char           *log;                /* connection logfile name           */
     int             logd;               /* connection logfile descriptor     */
     int             errnum;             /* error number from issuing command */
